@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+</head>
+<style>
+    h1
+    {
+        color:mediumblue;
+        display: flex;
+        justify-content: center;
+    }
+    input
+    {
+        width: 200px;
+        height: 28px;
+        margin: 6px;
+        border-radius: 3px;
+        border:1px solid ;
+    }
+    button
+    {
+        background-color: mediumblue;
+        color: aliceblue;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 5px;
+    }
+    .fg
+    {
+        border: 1px solid;
+        padding: 20px;
+        background-color: lightskyblue;
+        width: 300px;
+    }
+    body
+    {
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+        height: 100vh;
+    }
+    .row
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+</style>
+<body>
+<div class="fg">
+    <H1>TO-DO LIST </H1>
+    <div class="row">
+        <form name="tod" >
+    <input id="inp" name="inp" type="text" placeholder="Add some task">
+    <button name="btn" onclick="add()">ADD</button>
+    <ul>
+    </ul>
+</form>
+    </div>
+    
+</div>
+
+<script>
+
+    function add()
+    {
+        var newtask=document.tod.inp.value;
+        document.createElement("li");
+        li.textcontent=newtask;
+        allinto.appendchild(li);
+    }
+</script>
+    
+</body>
+</html>
